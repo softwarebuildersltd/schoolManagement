@@ -1,3 +1,32 @@
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+}
+.menu_item li a {
+  position: relative;
+}
+.menu_item li a::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #007621;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s all ease;
+}
+.menu_item li a:hover::after {
+  width: 100%;
+}
+.menu_area {
+  position: relative;
+}
+.sub_menu {
+  position: absolute;
+
+  padding: 36px 10px 10px 10px;
+  display: none;
+  transform: 0.5s all ease;
+  background-color: #fff;
+}
+.dropdown_1:hover .sub_menu {
+  display: block;
 }
