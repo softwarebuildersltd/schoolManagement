@@ -30,3 +30,9 @@ body {
 .dropdown_1:hover .sub_menu {
   display: block;
 }
+
+.hero {
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+}
